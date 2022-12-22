@@ -1,0 +1,9 @@
+@import url('../home/home.component.css');
+*{
+    font-size: 18px;
+    text-align: left;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
