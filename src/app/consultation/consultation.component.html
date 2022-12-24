@@ -11,33 +11,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>D134678</td>
-            <td>2022-06-24</td>
-            <td>Dr. Alsaoud Yassine</td>
+          <tr *ngFor="let cons of consultationData" >
+            <td>{{cons.id}}</td>
+            <td>{{cons.date}}</td>
+            <td>{{cons.medecin.nom}} {{cons.medecin.prenom}}</td>
             <td>
               <a href="#">
-                <mat-icon class="icon">description</mat-icon> description
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>D134678</td>
-            <td>2022-06-24</td>
-            <td>Dr. Alsaoud Yassine</td>
-            <td>
-              <a href="#">
-                <mat-icon class="icon">description</mat-icon> description
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>D134678</td>
-            <td>2022-06-24</td>
-            <td>Dr. Alsaoud Yassine</td>
-            <td>
-              <a href="#" >
-                <mat-icon class="icon">description</mat-icon> description
+                <mat-icon class="icon">description</mat-icon> {{cons.rapport}}
               </a>
             </td>
           </tr>
